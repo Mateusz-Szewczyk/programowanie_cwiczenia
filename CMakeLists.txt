@@ -3,4 +3,5 @@ project(programowanie_cwiczenia C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(programowanie_cwiczenia main.c)
+add_executable(programowanie_cwiczenia main.c
+        zadanie1.c)
