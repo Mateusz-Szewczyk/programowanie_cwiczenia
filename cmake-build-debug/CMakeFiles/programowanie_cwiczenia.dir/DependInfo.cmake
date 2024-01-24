@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/mateusz/CLionProjects/programowanie_cwiczenia/main.c" "CMakeFiles/programowanie_cwiczenia.dir/main.c.o" "gcc" "CMakeFiles/programowanie_cwiczenia.dir/main.c.o.d"
   "/Users/mateusz/CLionProjects/programowanie_cwiczenia/zadanie1.c" "CMakeFiles/programowanie_cwiczenia.dir/zadanie1.c.o" "gcc" "CMakeFiles/programowanie_cwiczenia.dir/zadanie1.c.o.d"
   )
 

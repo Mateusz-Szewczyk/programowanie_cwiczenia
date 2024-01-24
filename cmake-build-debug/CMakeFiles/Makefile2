@@ -81,12 +81,12 @@ clean: CMakeFiles/programowanie_cwiczenia.dir/clean
 CMakeFiles/programowanie_cwiczenia.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mateusz/CLionProjects/programowanie_cwiczenia/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target programowanie_cwiczenia"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mateusz/CLionProjects/programowanie_cwiczenia/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target programowanie_cwiczenia"
 .PHONY : CMakeFiles/programowanie_cwiczenia.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/programowanie_cwiczenia.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mateusz/CLionProjects/programowanie_cwiczenia/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mateusz/CLionProjects/programowanie_cwiczenia/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/programowanie_cwiczenia.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mateusz/CLionProjects/programowanie_cwiczenia/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/programowanie_cwiczenia.dir/rule

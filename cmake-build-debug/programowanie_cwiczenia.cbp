@@ -76,9 +76,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mateusz/CLionProjects/programowanie_cwiczenia/main.c">
-			<Option target="programowanie_cwiczenia"/>
-		</Unit>
 		<Unit filename="/Users/mateusz/CLionProjects/programowanie_cwiczenia/zadanie1.c">
 			<Option target="programowanie_cwiczenia"/>
 		</Unit>
