@@ -27,7 +27,7 @@ void zamiana(int tab[W][K], int w1, int w2);
 int licz(int *p1, int *p2, int x);
 int fsuma(int *t, int *wsk, int roz);
 int iloczyn(int z[W][K]);
-
+void maks_czworka(int t[W][W]);
 //
 //void f(double *s, int n, int m){
 //    n--;
@@ -164,20 +164,23 @@ int main(void)
 //    printf("\n%d\n%d", *(tablica+1), tablica);
 //    printf("%d", licz(&tablica[0], &tablica[2], 2));
 
-    int t2[W][K] = {{1,2,3},
+    int t2[W][K] = {{1,2,30},
                   {4,5,6},
-                  {7,8,9}};
-    printf("\n\n%d", t2[2][2]);
-    printf("\n\nTablica t2 przed zamianą:\n");
-    drukuj(W, K, t2);
-    zamiana(t2, 0, 1);
-    printf("\n\nTablica t2 po zamianie:\n");
-    drukuj(W, K, t2);
+                  {7,8,90}};
+//    printf("\n\n%d", t2[2][2]);
+//    printf("\n\nTablica t2 przed zamianą:\n");
+//    drukuj(W, K, t2);
+//    zamiana(t2, 0, 1);
+//    printf("\n\nTablica t2 po zamianie:\n");
+//    drukuj(W, K, t2);
 
-    printf("\niloczyn = %d\n", iloczyn(t2));
+//    printf("\niloczyn = %d\n\n", iloczyn(t2));
+//
+//    int t1[3];
+//    printf("%d", *(sumy(t1, t2) + 2));
 
-    int t1[3];
-    printf("%d", *(sumy(t1, t2) + 2));
+    maks_czworka(t2);
+
     return 0;
 }
     /*
@@ -241,6 +244,21 @@ int* sumy(int t1[], int t2[][K]){
      Zad4.  Dana jest tablica zwierająca N kolumn i N wierszy. Wyznaczyć taką „czwórkę„
             sąsiadujących elementów, których suma jest maksymalna.
 
+       */
+void maks_czworka(int t[W][W]){
+    int max = t[0][0] + t[0][1] + t[1][0] + t[1][1];
+    int w = W - 1;
+    for(int i = 0; i < w; i++){
+        for(int j = 0; j < w; j++){
+            int can = t[i][j] + t[i][j+1] + t[i+1][j] + t[i+1][j+1];
+            // printf("\n%d\n", can);
+            if(can > max) max = can;
+        }
+    }
+    printf("\n%d\n", max);
+}
+
+       /*
      Zad5.  Zdefiniować funkcję, która sprawdzi czy macierz kwadratowa, będąca jej
             parametrem jest diagonalna.
 
