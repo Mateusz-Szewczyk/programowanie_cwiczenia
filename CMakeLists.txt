@@ -4,5 +4,5 @@ project(programowanie_cwiczenia C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(programowanie_cwiczenia
-        zadanie1.c
+        plik_1.c
 )

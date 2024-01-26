@@ -2,57 +2,65 @@
 
 #include <stdio.h>
  
-void linia(int k);
+int ile_k(int *t, int k, int size);
+void drukujTablice(int tablica[5][5], int wiersze, int kolumny) {
+    for (int i = 0; i < wiersze; i++) {
+        for (int j = 0; j < kolumny; j++) {
+            printf("%d ", tablica[i][j]);
+        }
+        printf("\n");
+    }
+}
+void transponuj(int t[5][5], int size){
+    printf("\nPrzed transponowaniem:\n");
+    drukujTablice(t, size, size);
+    for(int i = 0; i < size; i++){
+        for(int j = i+1; j < size; j++){
+            int tmp = t[i][j];
+            t[i][j] = t[j][i];
+            t[j][i] = tmp;
+        }
+    }
+    printf("\nPo transponowaniu:\n");
+    drukujTablice(t, size, size);
+}
 
 int main(void){
-int x=1;
-int *p;
-linia(1);
-/*(1) SprawdŸ dzia³anie programu */
+    int tab[5][5] = {{20,4,8,4,56},
+                     {20,4,8,4,56},
+                     {20,4,8,4,56},
+                     {20,4,8,4,56},
+                     {20,4,8,4,56}};
 
-printf ("\nadres x=%p, wartosc x=%d\n",&x,x);  
+    int size = sizeof(tab)/sizeof(tab[0]);
 
-p=&x;
+    double tab1[16][8];
+    for(int i = 0; i < 16; i++){
+        for(int j = 0; j < 8; j++){
+            tab1[i][j] = i * j;
+        }
+    }
 
-printf ("\nwartosc x=%d, wartosc wskazywana przez p to: %d\n",x,*p);  
+    //drukujTablice(tab1, 16, 8);
 
-(*p)++;
-
-printf ("\nwartosc x=%d, wartosc wskazywana przez p to: %d\n",x,*p);  
-
-linia(2);
-/*
-// *(2)Popraw b³êdy w poni¿szym kodzie, tak aby program skompilowa³ siê i wykona³
-
-int n=5;
-double z, *wsk;
-
-printf ("\nwartosc z=%f, wsk=%p\n",z,wsk);
-
-z=45.5;
-
-*wsk=17.0;  
-printf ("\nwartosc z=%f, wartosc wskazywana przez wsk to: %f\n",z,*wsk); 
-
-printf ("\nadres z=%p, wskazanie wsk= %p\n",z,wsk); 
-
-wsk=&n; 
-printf ("\nwartosc n=%d, wartosc wskazywana przez wsk to: %f\n",n,*wsk); 
-
-&z=wsk; 
-wsk++;
-printf ("\nwskazanie wsk= %p, wartosc wskazywana przez wsk to: %f\n",wsk,*wsk);
-*/
-
-linia(0);
+    transponuj(tab, 5);
 
 return 0;
 }
 
-void linia(int k){
-if (k>0) printf("\n______________ %d _____________________________________\n",k);
-else printf("\n______________________________________________________\n");
+int ile_k(int *t, int k, int size){
+    int wynik = 0;
+    int *w = t;
+
+    for(int i = 0; i < size; i++){
+        if(*w%k == 0) wynik++;
+        printf("\n%d element tablicy = %d\n",i + 1, *w);
+        w++;
+    }
+    return wynik;
 }
+
+
 
 
  
