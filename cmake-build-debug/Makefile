@@ -129,29 +129,29 @@ programowanie_cwiczenia/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/build
 .PHONY : programowanie_cwiczenia/fast
 
-zadanie1.o: zadanie1.c.o
-.PHONY : zadanie1.o
+bubble_sort.o: bubble_sort.c.o
+.PHONY : bubble_sort.o
 
 # target to build an object file
-zadanie1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/zadanie1.c.o
-.PHONY : zadanie1.c.o
+bubble_sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/bubble_sort.c.o
+.PHONY : bubble_sort.c.o
 
-zadanie1.i: zadanie1.c.i
-.PHONY : zadanie1.i
+bubble_sort.i: bubble_sort.c.i
+.PHONY : bubble_sort.i
 
 # target to preprocess a source file
-zadanie1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/zadanie1.c.i
-.PHONY : zadanie1.c.i
+bubble_sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/bubble_sort.c.i
+.PHONY : bubble_sort.c.i
 
-zadanie1.s: zadanie1.c.s
-.PHONY : zadanie1.s
+bubble_sort.s: bubble_sort.c.s
+.PHONY : bubble_sort.s
 
 # target to generate assembly for a file
-zadanie1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/zadanie1.c.s
-.PHONY : zadanie1.c.s
+bubble_sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/bubble_sort.c.s
+.PHONY : bubble_sort.c.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... programowanie_cwiczenia"
-	@echo "... zadanie1.o"
-	@echo "... zadanie1.i"
-	@echo "... zadanie1.s"
+	@echo "... bubble_sort.o"
+	@echo "... bubble_sort.i"
+	@echo "... bubble_sort.s"
 .PHONY : help
 
 

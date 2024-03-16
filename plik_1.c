@@ -1,8 +1,7 @@
-/* WskaŸniki */
+/* Wska?niki */
 
 #include <stdio.h>
-#define N 4
-
+ 
 int ile_k(int *t, int k, int size);
 void drukujTablice(int tablica[5][5], int wiersze, int kolumny) {
     for (int i = 0; i < wiersze; i++) {
@@ -26,15 +25,6 @@ void transponuj(int t[5][5], int size){
     drukujTablice(t, size, size);
 }
 
-int czy_diagonalna(int t[N][N]){
-    for(int i = 0; i < N; i++){
-        for(int j = 0; j < N; j++){
-            if(i != j && t[i][j] != 0) return 0;
-        }
-    }
-    return 1;
-}
-
 int main(void){
     int tab[5][5] = {{20,4,8,4,56},
                      {20,4,8,4,56},
@@ -44,11 +34,6 @@ int main(void){
 
     int size = sizeof(tab)/sizeof(tab[0]);
 
-    int tab_diag[N][N] = {{1,0,0,0},
-                          {0,1,0,0},
-                          {0,0,1,0},
-                          {1,0,0,1}};
-
     double tab1[16][8];
     for(int i = 0; i < 16; i++){
         for(int j = 0; j < 8; j++){
@@ -57,7 +42,6 @@ int main(void){
     }
 
     //drukujTablice(tab1, 16, 8);
-    printf("Czy podana tablica jest diagonalna? (0 - Fa³sz , 1 - Prawda): %d", czy_diagonalna(tab_diag));
 
     transponuj(tab, 5);
 

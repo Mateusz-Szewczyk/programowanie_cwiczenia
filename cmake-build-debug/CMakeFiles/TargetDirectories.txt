@@ -1,3 +1,3 @@
-C:/Users/mrinc/CLionProjects/programowanie-cwiczenia/cmake-build-debug/CMakeFiles/programowanie_cwiczenia.dir
-C:/Users/mrinc/CLionProjects/programowanie-cwiczenia/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/mrinc/CLionProjects/programowanie-cwiczenia/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mateusz/CLionProjects/programowanie_cwiczenia/cmake-build-debug/CMakeFiles/programowanie_cwiczenia.dir
+/Users/mateusz/CLionProjects/programowanie_cwiczenia/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mateusz/CLionProjects/programowanie_cwiczenia/cmake-build-debug/CMakeFiles/rebuild_cache.dir
