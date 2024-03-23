@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/mateusz/CLionProjects/programowanie_cwiczenia/bubble_sort.c" "CMakeFiles/programowanie_cwiczenia.dir/bubble_sort.c.o" "gcc" "CMakeFiles/programowanie_cwiczenia.dir/bubble_sort.c.o.d"
+  "/Users/mateusz/CLionProjects/programowanie_cwiczenia/zad1.c" "CMakeFiles/programowanie_cwiczenia.dir/zad1.c.o" "gcc" "CMakeFiles/programowanie_cwiczenia.dir/zad1.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

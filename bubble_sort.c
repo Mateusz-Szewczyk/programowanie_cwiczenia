@@ -5,8 +5,6 @@
 
 #include <stdio.h>
 
-// Sortowanie bąbelkowe
-
 void bubble_sort(int tablica[], int n) {
     int zamiana;
     int i;

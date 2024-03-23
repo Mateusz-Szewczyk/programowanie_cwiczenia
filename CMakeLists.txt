@@ -4,5 +4,5 @@ project(programowanie_cwiczenia C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(programowanie_cwiczenia
-        bubble_sort.c
+        zad1.c
 )
