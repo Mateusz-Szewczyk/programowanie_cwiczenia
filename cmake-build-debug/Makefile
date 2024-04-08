@@ -129,29 +129,29 @@ programowanie_cwiczenia/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/build
 .PHONY : programowanie_cwiczenia/fast
 
-zadanie1.o: zadanie1.c.o
-.PHONY : zadanie1.o
+zad1.o: zad1.c.o
+.PHONY : zad1.o
 
 # target to build an object file
-zadanie1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/zadanie1.c.o
-.PHONY : zadanie1.c.o
+zad1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/zad1.c.o
+.PHONY : zad1.c.o
 
-zadanie1.i: zadanie1.c.i
-.PHONY : zadanie1.i
+zad1.i: zad1.c.i
+.PHONY : zad1.i
 
 # target to preprocess a source file
-zadanie1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/zadanie1.c.i
-.PHONY : zadanie1.c.i
+zad1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/zad1.c.i
+.PHONY : zad1.c.i
 
-zadanie1.s: zadanie1.c.s
-.PHONY : zadanie1.s
+zad1.s: zad1.c.s
+.PHONY : zad1.s
 
 # target to generate assembly for a file
-zadanie1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/zadanie1.c.s
-.PHONY : zadanie1.c.s
+zad1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programowanie_cwiczenia.dir/build.make CMakeFiles/programowanie_cwiczenia.dir/zad1.c.s
+.PHONY : zad1.c.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... programowanie_cwiczenia"
-	@echo "... zadanie1.o"
-	@echo "... zadanie1.i"
-	@echo "... zadanie1.s"
+	@echo "... zad1.o"
+	@echo "... zad1.i"
+	@echo "... zad1.s"
 .PHONY : help
 
 

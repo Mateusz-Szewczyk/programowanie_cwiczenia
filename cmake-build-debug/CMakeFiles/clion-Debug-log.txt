@@ -1,13 +1,13 @@
-"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\mrinc\CLionProjects\programowanie-cwiczenia -B C:\Users\mrinc\CLionProjects\programowanie-cwiczenia\cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/mateusz/CLionProjects/programowanie_cwiczenia -B /Users/mateusz/CLionProjects/programowanie_cwiczenia/cmake-build-debug
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
 -- Configuring done (0.1s)
-CMake Error at CMakeLists.txt:6 (add_executable):
-  Cannot find source file:
-
-    zadanie1.c
-
-
-CMake Error at CMakeLists.txt:6 (add_executable):
-  No SOURCES given to target: programowanie_cwiczenia
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/mateusz/CLionProjects/programowanie_cwiczenia/cmake-build-debug
