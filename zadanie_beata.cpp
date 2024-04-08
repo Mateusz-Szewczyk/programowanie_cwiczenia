@@ -324,7 +324,7 @@ int main() {
 
     //dane wyj�ciowe
     if (zagranea){
-        cout << "gracz a: " << endl;
+        cout << "gracz a " << endl;
         if (wygrane_a > 0) {
             cout << "\twygrane: " << ((float) wygrane_a / (float) zagranea)*100 << "%"<< endl;
         }
@@ -337,7 +337,7 @@ int main() {
     }
 
     if (zagraneb){
-        cout << "gracz b: " << endl;
+        cout << "gracz b " << endl;
         if (wygrane_b > 0) {
             cout << "\twygrane: " << ((float) wygrane_b / (float) zagraneb)*100 << "%"<< endl;
         }
@@ -350,7 +350,7 @@ int main() {
     }
 
     if (zagranec){
-        cout << "gracz c: " << endl;
+        cout << "gracz c " << endl;
         if (wygrane_c > 0) {
             cout << "\twygrane: " << ((float) wygrane_c / (float) zagranec)*100 << "%"<< endl;
         }
@@ -363,7 +363,7 @@ int main() {
     }
 
     if (zagraned){
-        cout << "gracz d: " << endl;
+        cout << "gracz d " << endl;
         if (wygrane_d > 0) {
             cout << "\twygrane: " << ((float) wygrane_d / (float) zagraned)*100 << "%"<< endl;
         }
@@ -376,7 +376,7 @@ int main() {
     }
 
     if (zagranee){
-        cout << "gracz e: " << endl;
+        cout << "gracz e " << endl;
         if (wygrane_d > 0) {
             cout << "\twygrane: " << ((float) wygrane_e / (float) zagranee)*100 << "%"<< endl;
         }
