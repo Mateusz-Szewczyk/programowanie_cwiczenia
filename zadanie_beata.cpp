@@ -16,35 +16,31 @@ int main() {
 
     int zagranea = 0; int zagraneb = 0; int zagranec = 0; int zagraned = 0; int zagranee = 0;
 
-    float wygrane_g1, wygrane_g2, przegrane_g1, przegrane_g2, remisy_g1, remisy_g2 = 0;
 
-
-    //wprowadzanie danych wej�ciowych
     cout << "Liczba rozgrywek: ";
     cin >> liczbaRozgrywek;
 
     int kostka1g1, kostka2g1, kostka3g1, kostka4g1, kostka1g2, kostka2g2, kostka3g2, kostka4g2;
 
     while (i < liczbaRozgrywek){
-        int _break = 0;
         int pary_max_1, pary_max_2;
-        int wygrana_g1, wygrana_g2, remis = 0;
+        int wygrana_g1, wygrana_g2, remis;
         cout << "komplet danych rozgrywki: ";
         cin >> gracz1 >> kostka1g1 >> kostka2g1 >> kostka3g1 >> kostka4g1 >> gracz2 >> kostka1g2 >> kostka2g2 >> kostka3g2 >> kostka4g2;
 
         int czworki = 0; int trojki = 0; int dwojki = 0; int pary = 0; int brak = 0;
 
-        // cztery jednakowe wyniki
+
         if (kostka1g1 == kostka2g1 && kostka2g1 == kostka3g1 && kostka3g1 == kostka4g1) {
             wygrana_g1 = 5;
             czworki++;
         }
-        //brak powtorzen
+
         else if (kostka1g1 != kostka2g1 && kostka1g1 != kostka3g1 && kostka1g1 != kostka4g1 && kostka2g1 != kostka3g1 && kostka2g1 != kostka4g1 && kostka3g1 != kostka4g1) {
             wygrana_g1 = 4;
             brak++;
         }
-            //dwie rozne pary powtorzen
+
         else if ((kostka1g1 == kostka2g1 && kostka3g1 == kostka4g1) || (kostka1g1 == kostka3g1 && kostka2g1 == kostka4g1) || (kostka1g1 == kostka4g1 && kostka2g1 == kostka3g1)) {
             wygrana_g1 = 3;
             if (kostka1g1 >= kostka2g1 && kostka1g1 >= kostka3g1) {
@@ -59,31 +55,28 @@ int main() {
             pary++;
 
         }
-            //trzy jednakowe wyniki
+
         else if ((kostka1g1 == kostka2g1 && kostka2g1 == kostka3g1) || (kostka1g1 == kostka3g1 && kostka1g1 == kostka4g1) || (kostka2g1 == kostka3g1 && kostka2g1 == kostka4g1) || (kostka1g1 == kostka2g1 && kostka2g1 == kostka4g1)) {
             wygrana_g1 = 2;
             trojki++;
         }
-            //dwa jednakowe wyniki
+
         else if ((kostka1g1 == kostka2g1) || (kostka1g1 == kostka3g1) || (kostka1g1 == kostka4g1) || (kostka2g1 == kostka3g1) || (kostka2g1 == kostka4g1) || (kostka3g1 == kostka4g1)) {
             wygrana_g1 = 1;
             dwojki++;
         }
 
 
-
-        //zliczanie punktow - wygrane gr2
-        //cztery jednakowe wyniki
         if (kostka1g2 == kostka2g2 && kostka2g2 == kostka3g2 && kostka3g2 == kostka4g2) {
             wygrana_g2 = 5;
             czworki++;
         }
-            //brak powtorzen
+
         else if (kostka1g2 != kostka2g2 && kostka1g2 != kostka3g2 && kostka1g2 != kostka4g2 && kostka2g2 != kostka3g2 && kostka2g2 != kostka4g2 && kostka3g2 != kostka4g2) {
             wygrana_g2 = 4;
             brak++;
         }
-            //dwie rozne pary powtorzen
+
         else if ((kostka1g2 == kostka2g2 && kostka3g2 == kostka4g2) || (kostka1g2 == kostka3g2 && kostka2g2 == kostka4g2) || (kostka1g2 == kostka4g2 && kostka2g2 == kostka3g2)) {
             wygrana_g2 = 3;
             if (kostka1g2 >= kostka2g2 && kostka1g2 >= kostka3g2) {
@@ -97,12 +90,12 @@ int main() {
             }
             pary++;
         }
-            //trzy jednakowe wyniki
+
         else if ((kostka1g2 == kostka2g2 && kostka2g2 == kostka3g2) || (kostka1g2 == kostka3g2 && kostka1g2 == kostka4g2) || (kostka2g2 == kostka3g2 && kostka2g2 == kostka4g2) || (kostka1g2 == kostka2g2 && kostka2g2 == kostka4g2)) {
             wygrana_g2 = 2;
             trojki++;
         }
-            //dwa jednakowe wyniki
+
         else if ((kostka1g2 == kostka2g2) || (kostka1g2 == kostka3g2) || (kostka1g2 == kostka4g2) || (kostka2g2 == kostka3g2) || (kostka2g2 == kostka4g2) || (kostka3g2 == kostka4g2)) {
             wygrana_g2 = 1;
             dwojki++;
@@ -112,7 +105,7 @@ int main() {
         int wynik2 = kostka1g2 + kostka2g2 + kostka3g2 + kostka4g2;
 
 
-        // #################################### //
+
         if (czworki > 1) {
             if (wynik1 > wynik2){
                 wygrana_g1 = 1;
@@ -322,7 +315,7 @@ int main() {
         ++i;
     }
 
-    //dane wyj�ciowe
+
     if (zagranea){
         cout << "gracz a " << endl;
         if (wygrane_a > 0) {
