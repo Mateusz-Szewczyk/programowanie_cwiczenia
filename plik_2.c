@@ -1,16 +1,44 @@
 /* Wska�niki a funkcje */
 
 #include <stdio.h>
+ 
+void linia(int k);
+void mniejsza(float x,float y);
 
-int f(int *y, int x) {
-    int i, *z = y + 2;
-    for (i = 1; *(y + i) > x; i += 2)
-        if (*z++ > 2)
-            printf("%d %d \n", i, y[i]);
+int main(void){
+linia(1);
+
+/* 
+Zmodyfikowa� funkcj� mniejsza tak, aby obu jej
+argumentom (zmiennym a i b)zosta�a przypisana warto�� mniejszego z nich */
+
+float a=10.5,b=25.8; 
+printf("\na=%.2f b=%.2f\n",a,b);
+
+mniejsza(a,b);
+
+printf("\na=%.2f b=%.2f\n",a,b);
+
+linia(0);
+ 
+return 0;
 }
 
-int main(void) {
-    int tab[8] = {5, 4, 6, 10, 9, 11, 2, 1};
-    f(tab, 2);
-    return 0;
+void mniejsza(float x, float y){
+printf("\nW funkcji, przed zamiana: x=%.2f y=%.2f\n",x,y);	
+if (x<y)
+   y=x;
+else
+   x=y;  
+printf("\nW funkcji, po zamianie: x=%.2f y=%.2f\n",x,y);
+
 }
+
+
+void linia(int k){
+if (k>0) printf("\n______________ %d ___________________________________\n",k);
+else printf("\n___________________________________________________\n");
+}
+
+
+ 
