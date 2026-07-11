@@ -1,17 +1,9 @@
 #!/usr/bin/env python3
-"""
-Quick Sort: divide-and-conquer algorithm that partitions the list around
-a pivot element and recursively sorts the partitions.
-Time complexity: O(n log n) average, O(n²) worst case
-"""
 
 from typing import List
 
 
 def quick_sort(arr: List[int]) -> List[int]:
-    """
-    Quick Sort algorithm.
-    """
     if len(arr) <= 1:
         return arr
 

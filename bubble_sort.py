@@ -1,17 +1,9 @@
 #!/usr/bin/env python3
-"""
-Bubble Sort: repeatedly steps through the list, compares adjacent elements
-and swaps them if they are in the wrong order.
-Time complexity: O(n²)
-"""
 
 from typing import List
 
 
 def bubble_sort(arr: List[int]) -> List[int]:
-    """
-    Bubble Sort algorithm.
-    """
     n = len(arr)
     result = arr.copy()
 

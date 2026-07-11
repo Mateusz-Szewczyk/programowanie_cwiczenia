@@ -1,17 +1,9 @@
 #!/usr/bin/env python3
-"""
-Merge Sort: divide-and-conquer algorithm that divides the list into halves,
-recursively sorts them, and merges them back together.
-Time complexity: O(n log n)
-"""
 
 from typing import List
 
 
 def merge_sort(arr: List[int]) -> List[int]:
-    """
-    Merge Sort algorithm.
-    """
     if len(arr) <= 1:
         return arr
 
@@ -23,7 +15,6 @@ def merge_sort(arr: List[int]) -> List[int]:
 
 
 def _merge(left: List[int], right: List[int]) -> List[int]:
-    """Helper function to merge two sorted lists."""
     result = []
     i = j = 0
 

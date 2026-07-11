@@ -1,10 +1,4 @@
 #!/usr/bin/env python3
-"""
-Demonstration of 3 sorting algorithms:
-1. Bubble Sort (bubble_sort.py)
-2. Merge Sort (merge_sort.py)
-3. Quick Sort (quick_sort.py)
-"""
 
 import time
 import random
@@ -14,7 +8,6 @@ from quick_sort import quick_sort
 
 
 def demonstrate_sorting():
-    """Demonstrate all three sorting algorithms."""
 
     test_arrays = [
         [64, 34, 25, 12, 22, 11, 90],
@@ -46,7 +39,6 @@ def demonstrate_sorting():
 
 
 def benchmark_algorithms():
-    """Performance comparison of the three algorithms."""
 
     sizes = [100, 500, 1000]
     algorithms = [
